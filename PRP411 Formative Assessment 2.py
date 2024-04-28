@@ -1,5 +1,6 @@
 events = {}
 
+# Add Event
 def add_event():
     event_id = input("Enter the event ID: ")
     event_name = input("Enter the event name: ")
@@ -15,6 +16,7 @@ def add_event():
     else:
         print(f"Event ID '{event_id}' already exists.")
 
+# Register for event
 def register_for_event(event_id, attendee_name):
     if event_id in events:
         event = events[event_id]
@@ -25,3 +27,17 @@ def register_for_event(event_id, attendee_name):
             print(f"Event '{event['name']}' is full.")
     else:
         print(f"Event with ID '{event_id}' not found.")
+
+
+# Search Event
+
+# List All Events
+
+# View Event Registrations
+
+
+add_event()
+add_event()
+register_for_event('1', 'Laythan')
+register_for_event('1', 'McKenzie')
+register_for_event('2', 'Garth')
